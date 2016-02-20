@@ -29,8 +29,7 @@ namespace LocalDbExample
                     {
                         while (reader.Read())
                         {
-                            Console.Write($"Id={reader["Id"]} \t");
-                            Console.WriteLine($"Sum={reader["Sum"]}");
+                            Console.WriteLine($"Id={reader["Id"]} \t Sum={reader["Sum"]}");
                         }
                     }
                 con.Close();
