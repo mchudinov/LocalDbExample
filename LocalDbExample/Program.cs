@@ -15,7 +15,7 @@ namespace LocalDbExample
             using (var con = new SqlConnection(constr))
             {
                 con.Open();
-                    var query = new SqlCommand($"INSERT INTO [Table] (Sum) VALUES ({new Random().Next(100)})", con);
+                    var query = new SqlCommand($"INSERT INTO [Widget] (Sum) VALUES ({new Random().Next(100)})", con);
                     query.ExecuteNonQuery();
                 con.Close();
             }
@@ -24,7 +24,7 @@ namespace LocalDbExample
             using (var con = new SqlConnection(constr))
             {
                 con.Open();
-                    var query = new SqlCommand($"SELECT * FROM [Table]", con);
+                    var query = new SqlCommand($"SELECT * FROM [Widget]", con);
                     using (var reader = query.ExecuteReader())
                     {
                         while (reader.Read())
