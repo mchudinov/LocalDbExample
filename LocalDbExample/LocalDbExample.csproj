@@ -69,9 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
-    <Compile Include="Migrations\201602212336417_Init.cs" />
-    <Compile Include="Migrations\201602212336417_Init.Designer.cs">
-      <DependentUpon>201602212336417_Init.cs</DependentUpon>
+    <Compile Include="Migrations\201602221324560_Init.cs" />
+    <Compile Include="Migrations\201602221324560_Init.Designer.cs">
+      <DependentUpon>201602221324560_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -90,8 +90,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201602212336417_Init.resx">
-      <DependentUpon>201602212336417_Init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201602221324560_Init.resx">
+      <DependentUpon>201602221324560_Init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
