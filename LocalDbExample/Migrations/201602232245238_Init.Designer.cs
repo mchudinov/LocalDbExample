@@ -13,7 +13,7 @@ namespace LocalDbExample.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201602231612008_Init"; }
+            get { return "201602232245238_Init"; }
         }
         
         string IMigrationMetadata.Source
