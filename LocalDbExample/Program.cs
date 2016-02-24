@@ -36,15 +36,6 @@ namespace LocalDbExample
                 con.Close();
             }
 
-            Console.WriteLine("Use Entity Framework");
-            var db = new AppDbContext();
-            db.Widgets.Add(new Widget {Sum = new Random().Next(100)});
-            db.SaveChanges();
-            foreach (var w in db.Widgets)
-            {
-                Console.WriteLine($"Id={w.Id} \t Sum={w.Sum}");
-            }
-
             Console.ReadLine();
         }
     }
